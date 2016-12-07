@@ -97,8 +97,7 @@ gulp.task("cssLibraries", function() {
   return gulp.src([
     "node_modules/bootstrap/dist/css/bootstrap.min.css",
     "node_modules/animate.css/animate.min.css",
-    "node_modules/font-awesome/css/font-awesome.min.css",
-    "css/main.css"
+    "node_modules/font-awesome/css/font-awesome.min.css"
   ])
   .pipe(postCss([autoprefixer({ browsers: browsers })]))
   .pipe(buildMode === "dev" ? gutil.noop() : minifyCSS())

@@ -1,0 +1,45 @@
+.about {
+    
+    /* Header Image Background */
+    .business-header {
+        height: 400px;
+        background: url('../../images/about_banner.jpg') center center no-repeat scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+
+    /* Customize the text color and shadow color and to optimize text legibility. */
+    .tagline {
+        margin-top: 200px;
+        text-shadow: 0 0 10px #000;
+        background-color: transparent;
+        color: blue;
+    }
+
+    .img-center {
+        margin: 0 auto;
+    }
+
+    .main-content {
+        margin-top: 50px;
+        font-size: 20px;
+        font-family: "Times New Roman", Times, serif;
+        word-wrap: break-word;
+    }
+
+    .headline {
+        color: blue;
+    }
+
+    .adjust-margin {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    .team-section {
+        margin-bottom: 35px;
+    }
+
+}

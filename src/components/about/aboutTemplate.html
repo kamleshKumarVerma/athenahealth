@@ -1,58 +1,69 @@
 <!-- Page Content -->
-<div class="container">
+<div class="about">
 
-	<!-- Introduction Row -->
-	<div class="row">
-		<div class="col-lg-12">
-			<h1 class="page-header">
-				<small>It's Nice to Meet You!</small>
-			</h1>
-			<p> For this project related any questions, issues or suggestions, please write to me at kamlesh.205110047@gmail.com</p>
-			<p>For all other enquiries, please call to me at +91-7847826750</p>
-		</div>
+	<!--=== Slider ===-->
+	<div class="business-header">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-lg-12">
+	            </div>
+	        </div>
+	    </div>
 	</div>
+	<!--=== End Slider ===-->
 
-	<!-- Team Members Row -->
-	<div class="row">
-		<div class="col-lg-12">
-			<h2 class="page-header">About Me</h2>
-		</div>
-		<div class="col-lg-4 col-sm-6 text-center">
-			<img class="img-circle img-responsive img-center" src="images/my_pic.jpg" alt="It's me">
-			<h3>Kamlesh kumar verma
-				<div><small>Frontend Web Development mentor at Acadgild</small></div>
-			</h3>
-			<p>I am mentor for angularjs project , for any help or query related to angular , please revert back to my email . i am pleased to serve you for your issue .</p>
+	<!--=== Content Block ===-->
+	<div class="main-content">
+		<div class="container">
 			<div class="row">
-				<div class="join-me-on">
-					<div class="col-md-4">
-						<small>Join me on</small>
-					</div>
-					<div class="col-md-2">
-						<a class="fb" target="_blank" href="https://www.facebook.com/kamlesh.verma.16906"></a>
-					</div>
-					<div class="col-md-2">
-						<a class="tweet" target="_blank" href="https://twitter.com/kamleshbabaraj"></a>
-					</div>
-					<div class="col-md-2">
-						<a class="google" target="_blank" href="https://plus.google.com/u/0/114164564178232255923/posts"></a>
-					</div>
+				<div class="col-md-12">
+					<p> Athenahealth is committed to policy equal employment opportunity. We
+						recruit and hire applicant without regards to race, color, regilion, 
+						sex (including pregnency), nation origin, disability, age , sexual oriental,
+						veteran status, genetic information, geneder identity, geneder expression,
+						or any other factor probihited by law.
+					</p>
 				</div>
-            </div>
-		</div>
-	</div>
-
-	<hr>
-
-	<!-- Footer -->
-	<footer>
-		<div class="row">
-			<div class="col-lg-12">
-				<p>Copyright &copy; F-Kart 2015</p>
 			</div>
-			<!-- /.col-lg-12 -->
 		</div>
-		<!-- /.row -->
-	</footer>
+	</div><!--/row-->
+	<!-- End Content Block -->
+
+	<!--=== Content Part ===-->
+	<div class="container">
+		<!-- Info Blokcs -->
+		<div class="row adjust-margin">
+			<!-- Welcome Block -->
+			<div class="col-md-12">
+				<div class="headline"><h1>Want to be work with us?</h1></div>
+				<p>Are you a student or recent college grad? athenahealth is a great place to grow
+				professionaly and make a real difference in the world.</p>
+				<p>
+					<button type="button" class="btn btn-primary btn-lg">
+						Request for join
+						<i class="fa fa-angle-double-right" aria-hidden="true"></i>
+					</button>
+				</p>
+			</div><!--/col-md-8-->
+		</div>
+		<!-- End Info Blokcs -->
+	</div><!--/container-->
+
+
+	<div class="container">
+		<!-- Related Projects Row -->
+        <div class="row team-section">
+            <div class="col-lg-12">
+                <h3 class="page-header">Ours Team</h3>
+            </div>
+            <div class="col-sm-3 col-xs-6" ng-repeat="member in team">
+                <a href="">
+                    <img class="img-responsive portfolio-item" src="{{member.src}}" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- /.row -->
+	</div>
+	<!-- End Content Part -->
 
 </div>

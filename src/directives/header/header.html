@@ -20,8 +20,8 @@
         <div class="container">
             <ul class="nav navbar-nav navbar-fixed-top">
                 
-                <li ng-class="menu.subMenu?'dropdown':''" class="mega-menu-fullwidth" ng-repeat="menu in menus">
-                    <a href="{{menu.url}}" class="dropdown-toggle" data-toggle="dropdown">
+                <li ng-click="changeRoute(menu.url)" ng-class="menu.subMenu?'dropdown':''" class="mega-menu-fullwidth" ng-repeat="menu in menus">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
                         {{menu.name}}
                     </a>
                     <ul class="dropdown-menu" ng-if="menu.subMenu">
@@ -29,7 +29,7 @@
                             <div class="mega-menu-content disable-icons">
                                 <div class="container">
                                     <div class="row equal-height">
-                                        <h1> hello </h1>
+                                        <h1> Submenu items goes here </h1>
                                     </div>
                                 </div>
                             </div>
