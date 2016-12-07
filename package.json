@@ -1,0 +1,62 @@
+{
+  "name": "Athenahealth",
+  "description": "Health care",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "^1.5.9",
+    "angular-route": "^1.5.9",
+    "animate.css": "^3.5.2",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "autoprefixer-core": "^5.1.7",
+    "chai": "^3.5.0",
+    "del": "*",
+    "glob": "~7.1.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssimport": "^4.0.1",
+    "gulp-debug": "*",
+    "gulp-eslint": "^2.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-ignore": "^2.0.2",
+    "gulp-inject": "^4.1.0",
+    "gulp-load-plugins": "*",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-postcss": "^5.1.10",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "^2.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-util": "^3.0.7",
+    "merge-stream": "^1.0.0",
+    "mkdirp": "^0.5.1",
+    "mocha": "^3.1.2",
+    "request": "^2.78.0",
+    "run-sequence": "^1.2.2",
+    "sinon": "^1.17.6"
+  },
+  "TendrlProps": {
+    "preloads": [],
+    "resources": {
+      "../node_modules/font-awesome/fonts/*.*": "fonts/"
+    },
+    "targetBrowsers": [
+      "last 2 version"
+    ],
+    "cssMain": "style/main.scss",
+    "jsFiles": [
+      "routing/index.js",
+      "components/**/*.js",
+      "directives/**/*.js"
+    ],
+    "htmlFiles": [
+      "index.html"
+    ],
+    "config": "config.json",
+    "buildDestination": "./dist/"
+  }
+}
