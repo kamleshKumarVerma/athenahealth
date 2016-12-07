@@ -1,0 +1,63 @@
+<!--=== Start Header ===-->
+<div class="header">
+    <div class="container animated fadeInLeft">
+        <!-- Logo -->
+        <a class="logo" href="#/">
+            <img src="images/Athenahealth.svg.png" alt="Logo" class="img-responsive">
+        </a>
+        <!-- End Logo -->
+
+        <!-- Toggle get grouped for better mobile display -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="fa fa-bars"></span>
+        </button>
+        <!-- End Toggle -->
+    </div><!--/end container-->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse animated fadeInRight">
+        <div class="container">
+            <ul class="nav navbar-nav navbar-fixed-top">
+                
+                <li ng-class="menu.subMenu?'dropdown':''" class="mega-menu-fullwidth" ng-repeat="menu in menus">
+                    <a href="{{menu.url}}" class="dropdown-toggle" data-toggle="dropdown">
+                        {{menu.name}}
+                    </a>
+                    <ul class="dropdown-menu" ng-if="menu.subMenu">
+                        <li>
+                            <div class="mega-menu-content disable-icons">
+                                <div class="container">
+                                    <div class="row equal-height">
+                                        <h1> hello </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div><!--/end container-->
+    </div><!--/navbar-collapse-->
+</div>
+<!--=== End Header ===-->
+
+<!-- For header animation -->
+<script type="text/javascript">
+    var shrinkHeader = 300;
+    $(window).scroll(function() {
+    var scroll = getCurrentScroll();
+      if ( scroll >= shrinkHeader ) {
+           $('.header').addClass('shrink');
+           $('.logo img').addClass('shrink');
+        }
+        else {
+            $('.header').removeClass('shrink');
+            $('.logo img').removeClass('shrink');
+        }
+    });
+    function getCurrentScroll() {
+        return window.pageYOffset || document.documentElement.scrollTop;
+    }
+</script>
