@@ -35,7 +35,7 @@ changes to the source.
 ```sh
 $ sudo npm install -g gulp
 $ npm install
-$ gulp
+$ gulp dev
 ```
 
 Upon success of all the steps, you should have the build artifacts in `./dist/`
